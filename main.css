@@ -1,6 +1,48 @@
-#Demo
+:root {
+    --dark:#374151;
+    --darker:#1F2937;
+    --darkest:#111827; 
+    --grey: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5Cf6;
+}
 
-Some description!
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'fira sans', sans-serif;
+}
 
-#Learning and consistensy
-Dont forget that i just added something here
+body {
+     display: flex;
+     flex: column;
+     min-height: 100vh;
+     background: var(--dark);
+     color: #FFF;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+#new-task-form {
+    display: flex;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
