@@ -46,3 +46,45 @@ input, button {
     outline: none;
     background: none;
 }
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+}
+
+#new-task-input::placeholder{
+    color: var(--gray);
+}
+ 
+#new-task-submit {
+    color: var(--pink);
+    font-size: 1.25rem;
+}
+
+#new-task-submit {
+    color: var(--pink);
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+
+#new-task-submit:active {
+    opacity: 0.6;
+}
+
+main {
+    flex: 1 1 0%;
+}
